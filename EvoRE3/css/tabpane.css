@@ -130,3 +130,18 @@
 .dark .evo-tab-row .tab-row .tab.changed { color: #7cb2dc; }
 .dark .evo-tab-row .tab-row .tab.selected { background-color: #414550; color: #eee; border-bottom: 3px solid #1976d2; }
 .dark .evo-tab-page, .dark .evo-tab-page iframe { background-color: #ecf0f1 }
+
+
+
+
+/* pmfx theme */
+
+.tab-page .tab-section .tab-header, 
+.tab-page .sectionHeader {
+  background-color: #f3f3f3; 
+  border-bottom-width: 1px;
+}
+
+#tab1Help > img {
+  margin-bottom: 20px;
+}
