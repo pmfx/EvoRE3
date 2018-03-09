@@ -413,6 +413,20 @@ form#docfinder div.tab-page { height: auto !important }
   background-color: rgba(0, 0, 0, 0.03) !important;
 }
 
+ul.breadcrumbs {
+  margin: 0 0 1rem 0;
+  padding: .5rem 0.8rem;
+  line-height: normal;
+  font-size: .675rem;
+  color: #888;
+  border-width: 0;
+  background-image: linear-gradient(to right, #f0f0f0, transparent 60%);
+}
+
+ul.breadcrumbs a {
+  color: #333;
+}
+
 #settingsPane [name="site_name"],
 #settingsPane [name="emailsender"],
 #settingsPane [name="emailsubject"],
