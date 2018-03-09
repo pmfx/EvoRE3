@@ -136,6 +136,13 @@
 
 /* pmfx theme */
 
+.tab-page .tab-header, 
+.sectionHeader {
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.tab-page .tab-header, 
 .tab-page .tab-section .tab-header, 
 .tab-page .sectionHeader {
   background-color: #f3f3f3; 
