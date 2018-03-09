@@ -75,7 +75,7 @@
     }
 
     .copyrights a {
-      color: #777
+      color: #fff
     }
 
     #submitButton {
