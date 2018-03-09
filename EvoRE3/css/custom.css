@@ -387,6 +387,10 @@ form#docfinder div.tab-page { height: auto !important }
   border-bottom: 1px solid rgba(0,0,0,.05);
 }
 
+.dark .widgets .card-header { 
+  background-color: #f9f9f9; 
+}
+
 .card .table.data {
   margin-bottom: 0;
   border-bottom-width: 0;
