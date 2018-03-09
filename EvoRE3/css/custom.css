@@ -436,3 +436,18 @@ textarea.mce,
 #editorRow_TinyMCE {
   width: 100% !important;
 }
+
+#news .card-block > div,
+#security .card-block > div {
+  padding: 0 !important;
+}
+#news .card-block ul,
+#security .card-block ul {
+  padding: 0;
+  margin: 0;
+}
+#news .card-block ul li,
+#security .card-block ul li {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #ebebeb;
+}
