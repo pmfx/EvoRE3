@@ -104,6 +104,14 @@ h1 small { margin-left: 0.5em; line-height: 1em }
 
 /* pmfx theme */
 
+.text-primary {
+  color: #3481bc !important;
+}
+
+a {
+  color: #3481bc;
+}
+
 h1 .fa {
   display: none;
 }

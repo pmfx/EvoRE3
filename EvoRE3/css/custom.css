@@ -374,21 +374,23 @@ form#docfinder div.tab-page { height: auto !important }
 }
 
 .widgets .card {
-  border: 1px solid rgba(0,0,0,.1);
-  border-radius: 3px;
-  box-shadow: none;
+  /* border: 1px solid rgba(0,0,0,.1); */
+  border-width: 0;
+  border-radius: 0;
+  box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.05);
 }
 
+.card-header,
 .widgets .card-header {
   font-size: .9rem;
   font-weight: 700;
   text-transform: none;
-  background-color: #f9f9f9;
-  border-bottom: 1px solid rgba(0,0,0,.05);
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
 .dark .widgets .card-header { 
-  background-color: #f9f9f9; 
+  background-color: #fafafa; 
 }
 
 .card .table.data {
