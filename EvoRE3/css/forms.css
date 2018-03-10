@@ -369,3 +369,19 @@ select::-ms-expand {
     text-indent: -2px
   }
 }
+
+
+
+/* pmfx theme */
+
+input[type="text"]:not(.form-control),
+input[type="password"]:not(.form-control),
+input[type="number"]:not(.form-control),
+input[type="email"]:not(.form-control),
+input[type="date"]:not(.form-control),
+input[type="url"]:not(.form-control),
+input[type="search"]:not(.form-control),
+select:not(.form-control),
+textarea:not(.form-control) {
+  border-color: rgba(0,0,0,0.08);
+}

@@ -139,7 +139,9 @@
 .tab-page .tab-header, 
 .sectionHeader {
   font-size: 14px;
+  font-weight: bold;
   letter-spacing: 0;
+  color: #777;
 }
 
 .tab-page .tab-header, 
@@ -149,6 +151,29 @@
   border-bottom-width: 1px;
 }
 
+.tab-page .tab-section, 
+.tab-page .sectionHeader + .sectionBody {
+  border-radius: 0;
+}
+
+.tab-page .tab-section .tab-header, 
+.tab-page .sectionHeader {
+  padding-left: .75rem;
+}
+
+.sectionBody td, 
+.sectionBody th {
+  padding: 0.25rem;
+}
+
+#tabGeneral > table {
+  margin-bottom: 1rem;
+}
+
 #tab1Help > img {
   margin-bottom: 20px;
+}
+
+.tmplvars .tvimage img {
+  box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.1);
 }
