@@ -427,7 +427,7 @@ ul.breadcrumbs {
   font-size: .675rem;
   color: #888;
   border-width: 0;
-  background-image: linear-gradient(to right, #f0f0f0, transparent 60%);
+  background-image: linear-gradient(to right, rgba(0,0,0,0.04), transparent 60%);
 }
 
 ul.breadcrumbs a {
