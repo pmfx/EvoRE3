@@ -347,16 +347,14 @@ form#docfinder div.tab-page { height: auto !important }
 }
 .loginbox {
   will-change: transform;
-  transform: translate3d(-100%,0,0);
+  transform: translate3d(0,0,0);
   -webkit-animation-name: anim-loginbox;
   -webkit-animation-duration: .5s;
-  -webkit-animation-delay: 0s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
   animation-name: anim-loginbox;
   animation-duration: .5s;
-  animation-delay: 0s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
