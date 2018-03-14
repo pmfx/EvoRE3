@@ -95,6 +95,7 @@
     }
     
     .form-control,
+    .captcha input,
     #FMP-email {
       padding: 0.7em 1em !important;
       border-radius: 0 !important;
@@ -103,6 +104,9 @@
     .form-control,
     .form-control:active,
     .form-control:focus,
+    .captcha input,
+    .captcha input:active,
+    .captcha input:focus,
     #FMP-email,
     #FMP-email:active,
     #FMP-email:focus {
@@ -113,6 +117,8 @@
     }
     
     .form-control:active,
+    .captcha input:focus,
+    .captcha input:active,
     .form-control:focus,
     #FMP-email:active,
     #FMP-email:focus {
@@ -176,6 +182,21 @@
         transform: rotate(360deg)
       }
     }
+    
+    /* captcha */
+    
+    .captcha {
+      margin-bottom: 20px;
+    }
+    
+    label,
+    .caption {
+      color: #818a91;
+      line-height: 1.2em;
+    }
+    .caption {
+      margin-bottom: 15px;
+    }
 
   </style>
 </head>
@@ -198,7 +219,7 @@
           <label for="password" class="text-muted">[+password+]</label>
           <input type="password" class="form-control" name="password" id="password" tabindex="2" value="" />
         </div>
-        <div class="clearfix">
+        <div class="captcha clearfix">
           <div class="caption">[+login_captcha_message+]</div>
           <p>[+captcha_image+]</p>
           [+captcha_input+]
