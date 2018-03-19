@@ -15,10 +15,11 @@
       height: 100%;
     }
 
-    body {
-      background-color: #ebebeb;
-      background-image: url('media/style/[(manager_theme)]/images/login-bg.jpg');
-      background-size: cover;
+    body,
+    body.dark {
+      background-color: #ebebeb !important;
+      background-image: url('media/style/[(manager_theme)]/images/login-bg.jpg') !important;
+      background-size: cover !important;
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -27,12 +28,21 @@
       height: 100%;
     }
 
+    .loginbox,
+    .dark .loginbox {
+      background-color: rgba(0,0,0,0.7);
+      transition: background ease-in-out .3s;
+    }
+
     .loginbox {
       width: 100%;
       height: 100vh;
-      background-color: rgba(0,0,0,0.7);
-      /* box-shadow: 0 0 2rem 0 rgba(0, 0, 0, .5); */
-      transition: background ease-in-out .3s;
+    }
+
+    @media (min-width: 480px) {
+      .loginbox {
+        max-width: 25rem;
+      }
     }
     
     /*
@@ -45,12 +55,6 @@
     
     .container-body {
       padding: 2.5rem;
-    }
-    
-    @media (min-width: 480px) {
-      .loginbox {
-        max-width: 25rem;
-      }
     }
     
     #loginfrm a {
@@ -128,6 +132,7 @@
     
     .form-group--logo {
       margin-bottom: 30px;
+      text-align: left !important;
     }
     
     #onManagerLoginFormRender {
