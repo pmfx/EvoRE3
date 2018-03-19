@@ -93,3 +93,24 @@
 #treeHolder .rootNode .title {
   font-weight: bold;
 }
+
+#treePane .panel-title a {
+  padding: 7px 0 7px 0.6rem !important;
+}
+
+#treePane .panel-title > a:before {
+  display: none !important;
+}
+
+#treePane .tab-page ul {
+  margin: 7px 0 !important;
+}
+
+.ElementsInTree #tree .eltree {
+  padding-left: 1rem !important;
+}
+
+.dark #treePane .panel-heading {
+  border-top-color: #3e4144 !important;
+  border-bottom-color: transparent !important;
+}
