@@ -22,6 +22,13 @@
       background-size: cover !important;
       background-position: center !important;
       background-repeat: no-repeat !important;
+      background-attachment: fixed !important;
+    }
+    @media (max-width: 479px) {
+      body,
+      body.dark {
+        background-image: none !important;
+      }
     }
 
     .page {
@@ -30,23 +37,29 @@
 
     .loginbox,
     .dark .loginbox {
-      background-color: rgba(0,0,0,0.7);
+      background-color: rgba(0,0,0,0.8);
       transition: background ease-in-out .3s;
+    }
+    @media (max-width: 479px) {
+      .loginbox,
+      .dark .loginbox {
+        background-color: transparent;
+      }
     }
 
     .loginbox {
       width: 100%;
-      height: 100vh;
-    }
-
-    @media (min-width: 480px) {
-      .loginbox {
-        max-width: 25rem;
-      }
+      min-height: 100vh;
     }
     
     .container-body {
-      padding: 2.5rem;
+      padding: 1.75rem;
+    }
+    
+    @media (min-width: 480px) {
+      .container-body {
+        padding: 2.5rem;
+      }
     }
     
     #loginfrm a {
@@ -54,28 +67,87 @@
     }
 
     .copyrights {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      padding: .5rem 1.5rem 1rem 2.5rem;
+      width: 100%;
+      padding: .5rem 1.5rem 1.5rem 1.75rem;
       font-size: .675rem;
       color: #aaa;
-      text-align: left
+      text-align: left;
+      background-color: rgba(0,0,0,0.15);
+    }
+    
+    @media (min-width: 480px) {
+      .copyrights {
+        padding-left: 2.5rem;
+      }
+    }
+
+    @media (min-width: 480px) {
+      .loginbox,
+      .copyrights {
+        max-width: 25rem;
+      }
     }
 
     @media (min-width: 768px) {
       .copyrights {
-        text-align: right
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: auto;
+        max-width: none;
+        text-align: right;
+        background-color: transparent;
       }
     }
 
     .copyrights a {
       color: #fff
     }
+    
+    .btn,
+    #FMP-email_button {
+      border-radius: 2px;
+    }
+    
+    .btn-success,
+    #FMP-email_button {
+      color: #fff !important;
+      background-color: #449d44 !important;
+      border-color: #419641 !important;
+    }
+    
+    .btn-success:hover,
+    .btn-success:focus,
+    #FMP-email_button:hover,
+    #FMP-email_button:focus {
+      background-color: #5cb85c !important;
+      border-color: #5cb85c !important;
+    }
 
-    #submitButton {
+    #submitButton,
+    #FMP-email_button {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    #submitButton{
       float: right;
+    }
+    
+    #onManagerLoginFormRender {
+      margin-top: 3rem;
+      color: #fff;
+    }
+
+    @media (min-width: 768px) {
+      #ForgotManagerPassword-show_form {
+        display: inline-block;
+        position: absolute;
+        z-index: 500;
+        bottom: 1.5rem;
+      }
     }
 
     #FMP-email_label {
@@ -83,7 +155,7 @@
     }
 
     #FMP-email {
-      margin-bottom: 1rem
+      margin-bottom: 2rem
     }
 
     #FMP-email_button {
@@ -94,7 +166,7 @@
     .captcha input,
     #FMP-email {
       padding: 0.7em 1em !important;
-      border-radius: 0 !important;
+      border-radius: 2px !important;
       transition: all ease-in-out .3s !important;
     }
     .form-control,
@@ -127,10 +199,8 @@
       text-align: left !important;
     }
     
-    #onManagerLoginFormRender {
-      display: block;
-      padding: 15px 0;
-      color: #fff;
+    .form-group--actions > label {
+      padding-top: 11px;
     }
 
     /* mainloader */
@@ -183,7 +253,7 @@
     /* captcha */
     
     .captcha {
-      margin-bottom: 20px;
+      margin-bottom: 1rem;
     }
     
     label,
@@ -221,10 +291,10 @@
           <p>[+captcha_image+]</p>
           [+captcha_input+]
         </div>
-        <div class="form-group">
+        <div class="form-group form-group--actions">
           <label for="rememberme" class="text-muted">
               <input type="checkbox" id="rememberme" name="rememberme" value="1" class="checkbox" [+remember_me+] /> [+remember_username+]</label>
-          <button type="submit" name="submitButton" class="btn btn-success float-xs-right" id="submitButton">[+login_button+]</button>
+          <button type="submit" name="submitButton" class="btn btn-success" id="submitButton">[+login_button+]</button>
         </div>
         [+OnManagerLoginFormRender+]
       </form>
