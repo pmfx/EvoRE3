@@ -17,11 +17,11 @@
 
     body,
     body.dark {
-      background-color: #ebebeb !important;
+      background-color: #2a313b !important;
       background-image: url('media/style/[(manager_theme)]/images/login-bg.jpg') !important;
       background-size: cover !important;
-      background-position: center;
-      background-repeat: no-repeat;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
     }
 
     .page {
@@ -44,14 +44,6 @@
         max-width: 25rem;
       }
     }
-    
-    /*
-    @media (min-width: 1200px) {
-      .loginbox:hover {
-        background-color: rgba(0,0,0,0.8);
-      }
-    }
-    */
     
     .container-body {
       padding: 2.5rem;
