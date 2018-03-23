@@ -37,7 +37,7 @@
 
     .loginbox,
     .dark .loginbox {
-      background-color: rgba(0,0,0,0.8);
+      background-color: rgba(0,0,0,0.85);
       transition: background ease-in-out .3s;
     }
     @media (max-width: 479px) {
@@ -243,6 +243,44 @@
       animation: rotate 2s linear infinite;
       box-shadow: 5px 5px 0 0 rgb(234, 132, 82), 14px -7px 0 0 rgba(111, 163, 219, 0.7), -7px 11px 0 0 rgba(112, 193, 92, 0.74), -11px -7px 0 0 rgba(147, 205, 99, 0.78);
     }
+    
+    /* loginbox animation */
+    @-webkit-keyframes anim-loginbox-evore3 {
+      from {
+        opacity: 0;
+        transform: translate3d(-10%,0,0);
+      }
+      to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+      }
+    }
+
+    @keyframes anim-loginbox-evore3 {
+      from {
+        opacity: 0;
+        transform: translate3d(-10%,0,0);
+      }
+      to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+      }
+    }
+    .loginbox {
+      will-change: transform;
+      transform: translate3d(0,0,0);
+      -webkit-animation-name: anim-loginbox-evore3;
+      -webkit-animation-duration: .5s;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-timing-function: ease;
+      -webkit-animation-fill-mode: forwards;
+      animation-name: anim-loginbox-evore3;
+      animation-duration: .5s;
+      animation-iteration-count: 1;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
+    }
+    /* end loginbox animation */
 
     @keyframes rotate {
       to {

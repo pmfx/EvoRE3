@@ -11,8 +11,9 @@
 #treeMenu .treeButton.disabled { color: #777; opacity: 0.5 }
 #treeHolder { position: relative; z-index: 1; cursor: default; overflow: auto; height: 100%; max-height: calc(100% - 30px); white-space: nowrap }
 #treeHolder .rootNode { position: relative; }
-#treeHolder .rootNode a { display: block; overflow: hidden; padding: 0.25em 0.5em; text-overflow: ellipsis; color: #333; cursor: pointer; -webkit-transition-duration: 0.15s; transition-duration: 0.15s }
+#treeHolder .rootNode a { display: block; overflow: hidden; padding: 1em 1em 0.5em 1em; text-overflow: ellipsis; color: #333; cursor: pointer; -webkit-transition-duration: 0.15s; transition-duration: 0.15s; font-weight: bold }
 #treeHolder .rootNode a .fa { margin-right: 0.5em }
+#treeHolder .rootNode .icon { display: none; }
 #treeRoot { float: left; width: 100%; color: #333; }
 #treeRoot a { display: block; clear: both; overflow: hidden; text-decoration: none; padding: 0.1em 0 0.1em 2.2em; font-size: 1em; text-overflow: ellipsis; color: #333; cursor: default; -webkit-transition-duration: 0.15s; transition-duration: 0.15s }
 #treeRoot a:hover:not(.empty), #treeRoot a.current { background-color: rgba(33, 150, 243, 0.1) }
@@ -66,36 +67,20 @@
 .dark #treeRoot .toggle:hover { background-color: rgba(255, 255, 255, 0.19); }
 .dark #treeRoot .fa, .dark #treeHolder .rootNode .fa { color: #bcbec0; }
 
-
-
-
-
-/* 
-* pmfx theme 
-*/
-#treeRoot a {
-  padding-top   : 0.2em;
-  padding-bottom: 0.2em;
-  padding-left  : 2.5em !important;
-}
-#treeMenu .treeButton .fa {
-  line-height: 1.3em;
-}
+/* evore3 */
 
 #treeHolder .rootNode a {
   padding: 1em 1em 0.5em 1.25em;
 }
 
-#treeHolder .rootNode .icon {
-  display: none;
-}
-
-#treeHolder .rootNode .title {
-  font-weight: bold;
+#treeRoot a {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-left: 2.5em !important;
 }
 
 #treePane .panel-title a {
-  padding: 7px 0 7px 0.6rem !important;
+  padding: 4px 0 6px 0.6rem !important;
 }
 
 #treePane .panel-title > a:before {
@@ -108,9 +93,19 @@
 
 .ElementsInTree #tree .eltree {
   padding-left: 1rem !important;
+  font-size: 13px;
 }
 
 .dark #treePane .panel-heading {
   border-top-color: #3e4144 !important;
   border-bottom-color: transparent !important;
+}
+
+@media (min-width: 1200px) {
+  #tree, #main {
+    top: 50px !important;
+  }
+  #tree {
+    font-size: 13px !important;
+  }
 }
