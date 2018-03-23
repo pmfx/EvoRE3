@@ -106,7 +106,7 @@
     
     .btn,
     #FMP-email_button {
-      border-radius: 2px;
+      border-radius: 0;
     }
     
     .btn-success,
@@ -166,7 +166,7 @@
     .captcha input,
     #FMP-email {
       padding: 0.7em 1em !important;
-      border-radius: 2px !important;
+      border-radius: 0 !important;
       transition: all ease-in-out .3s !important;
     }
     .form-control,
